@@ -41,9 +41,14 @@ body{
     margin: 5px;
     text-decoration: none;
     color: rgba(237, 237, 237, 0.687);
-    font-family: roboto, sans-serif;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-size: 15px;
 }
 
+.card{
+    color: rgb(0, 99, 100);
+}
 :root{
     --color-white: #fff;
     --color-dark1: #212529;

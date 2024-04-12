@@ -47,7 +47,9 @@ body{
 }
 
 .card{
-    color: rgb(0, 99, 100);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 :root{
     --color-white: #fff;
@@ -61,6 +63,9 @@ body{
 }
   
 .pokemon-card {
+    font-family: "roboto", sans-serif ;
+    margin: 30px;
+    width: 30vw;
     border: 2px solid var(--color-purple);
     border-radius: 10px;
     padding: 20px;  
@@ -70,8 +75,10 @@ body{
 }
   
 .pokemon-card img {
-    width: 150px;
-    height: 150px;
+    background-color: #727a8391;
+    border-radius: 10px;
+    width: 160px;
+    height: 160px;
     margin-right: 20px;
 }
   

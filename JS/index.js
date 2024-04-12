@@ -6,19 +6,19 @@ const abilities = document.getElementById("abilities")
 const stats = document.getElementById("stats")
 const moves = document.getElementById("moves")
 const items = document.getElementById("items")
+var card = document.getElementById("card")
 
-fetch(api+"pokemon/6")
+fetch(api+"pokemon/94")
     .then(res => res.json())
     .then(json => {
         console.log(json)
         pokeimg.src = json.sprites.other["official-artwork"].front_default
         poke.innerHTML = json.name
-        types.innerHTML ="Tipos: "+ json.types[0].type.name + ", " + json.types[1].type.name
-        abilities.innerHTML = "Habilidades: " + json.abilities[0].ability.name + ", " + json.abilities[1].ability.name
+        types.innerHTML = "Tipos: "+ json.types[0].type.name + ", " + json.types[1].type.name
+        abilities.innerHTML = "Habilidades: " + json.abilities[0].ability.name
         stats.innerHTML = "Stats: " + json.stats[0].base_stat + ", " + json.stats[1].base_stat + 
         ", " + json.stats[2].base_stat + ", " + json.stats[3].base_stat + ", "
         + json.stats[4].base_stat + ", " + json.stats[5].base_stat
-        items.innerHTML = "Held Items: " + json.helditems
         moves.innerHTML = "Moves: " + json.moves[0].move.name + ", " + json.moves[1].move.name
 
     })

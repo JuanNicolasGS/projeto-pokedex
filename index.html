@@ -1,17 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/style.css">
-    <link rel="shortcut icon" href="./IMGS/controller.svg">
+    <link rel="shortcut icon" href="./IMGS/pokeball.png">
     <title>PokeProject</title>
 </head>
 <body>
     <div class="header">
         <div class="left-header">
-            <a href="/Projects/HMTL/09-04-2024/teste.html" class="left-header">Teste</a>
-            <a href="./sobre.html" class="left-header">Sobre</a>
             <a href="./info.html" class="left-header">Informações</a>
         </div>
         <div class="right-header">
@@ -41,17 +39,54 @@
         </div>
     </div>
     <div class="card">
-        <div class="pokemon-card" id="card">
-            <img src=""  id="pokeimg">
-            <div class="pokemon-info">
-                <h1 class="pokemon-name" id="poke"></h1>
-                <p class="pokemon-type" id="types"></p>
-                <p class="pokemon-abilities" id="abilities"><strong></strong></p>
-                <p class="pokemon-held-items" id="items"></p>
-                <p class="pokemon-moves" id="moves"></p>
-                <p class="pokemon-status" id="stats">
-                   
-                </p>
+        <div class="background">
+            <div class="name__id">
+                <h1 class="poke__name">Pikachu</h1>
+                <span class="poke__id">25</span>
+            </div>
+            <div class="backgroundimg"></div>
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/25.png" class="pokemon__img">
+            <div class="poke__info">
+                <div class="var">
+                    <p class="type"></p>
+                    <div class="stats">
+                        <p>
+                            HP: 
+                            <br>
+                            <progress value="35" max="225" class="progress__bar"></progress>
+                        </p>
+                        <br>
+                        <p>
+                            Atk:
+                            <br>
+                            <progress value="55" max="225" class="progress__bar"></progress>
+                        </p>
+                        <br>
+                        <p>
+                            Def:
+                            <br>
+                            <progress value="40" max="225" class="progress__bar"></progress>
+                        </p>
+                        <br>
+                        <p>
+                            Esp. Atk:
+                            <br>
+                            <progress value="50" max="225" class="progress__bar"></progress>
+                        </p>
+                        <br>
+                        <p>
+                            Esp. Def:
+                            <br>
+                            <progress value="50" max="225" class="progress__bar"></progress>
+                        </p>
+                        <br>
+                        <p>
+                            Velocidade:
+                            <br>
+                            <progress value="90" max="225" class="progress__bar"></progress>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

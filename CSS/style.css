@@ -1,13 +1,14 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #a0a0a065;
 }
 
-.header{
+.header {
     width: 100vw;
     height: 65px;
     background-color: #030303f8;
@@ -15,21 +16,44 @@ body{
     display: flex;
 }
 
-.right-header{
+.right-header {
     display: flex;
     position: absolute;
     right: 20px;
-    top: 16px;   
+    top: 16px;
 }
-.img-header{
+
+.img-header {
     margin: 4px;
 }
-.img-header-home{
+
+.img-header-home {
     margin: 4px;
     margin-left: 18px;
 }
 
+<<<<<<< HEAD
 :root{
+=======
+.left-header:hover {
+    color: white;
+    transition: 0.5s;
+}
+
+.left-header {
+    position: relative;
+    top: 8px;
+    left: 4px;
+    margin: 5px;
+    text-decoration: none;
+    color: rgba(237, 237, 237, 0.687);
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-size: 15px;
+}
+
+:root {
+>>>>>>> 1e7b09350fd50050fd10fbd3608088933c646ddf
     --color-white: #fff;
     --color-dark1: #212529;
     --color-dark2: #2B3035;
@@ -39,21 +63,29 @@ body{
     --color-purple: #f70909;
     --color-purple2: #d60303;
 }
+<<<<<<< HEAD
 .card{
     position: absolute;
     display: flexbox;
     flex-direction: column;
     left: 40.5%;
+=======
+
+.card {
+    position: relative;
+>>>>>>> 1e7b09350fd50050fd10fbd3608088933c646ddf
 }
+
 .background {
     position: absolute;
     width: 19vw;
-    height: 85vh; 
+    height: 85vh;
     background-color: #ffffff;
     left: 79.9%;
     margin-top: 17px;
 }
-.poke__name{
+
+.poke__name {
     text-transform: capitalize;
     color: #ffffff;
     margin: 0;
@@ -66,8 +98,13 @@ body{
     left: 7%;
 }
 
+<<<<<<< HEAD
 .poke__id{
     color: #ecececf3;
+=======
+.poke__id {
+    color: #e0e0e0c4;
+>>>>>>> 1e7b09350fd50050fd10fbd3608088933c646ddf
     position: absolute;
     font-size: 90%;
     font-weight: 600;
@@ -77,17 +114,20 @@ body{
     margin: 0;
     padding: 0;
 }
-.backgroundimg{
+
+.backgroundimg {
     background-color: rgb(255, 205, 41);
     width: 19vw;
     height: 40vh;
 }
-.pokemon__img{
+
+.pokemon__img {
     position: absolute;
-    width: 90%;    
+    width: 90%;
     left: 10%;
     top: 15%;
 }
+
 .stats {
     position: absolute;
     top: 51%;
@@ -96,8 +136,13 @@ body{
     font-family: "JetBrains mono", monospace;
     font-weight: 600;
 }
+
 .progress__bar {
     width: 250%;
     height: 2vh;
+<<<<<<< HEAD
 }
 
+=======
+}
+>>>>>>> 1e7b09350fd50050fd10fbd3608088933c646ddf

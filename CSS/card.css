@@ -1,0 +1,65 @@
+.card{
+    position: absolute;
+    display: flexbox;
+    flex-direction: column;
+    left: 40.5%;
+}
+.poke__name {
+    text-transform: capitalize;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    font-size: 80%;
+    font-weight: 600;
+    font-family: "JetBrains mono", monospace;
+    top: 3%;
+    left: 7%;
+}
+
+.poke__id {
+    color: #e0e0e0c4;
+    position: absolute;
+    font-size: 90%;
+    font-weight: 600;
+    font-family: "JetBrains mono", monospace;
+    top: 3%;
+    left: 87%;
+    margin: 0;
+    padding: 0;
+}
+
+.pokemon__img {
+    position: absolute;
+    width: 90%;
+    left: 10%;
+    top: 15%;
+}
+
+.backgroundimg {
+    background-color: rgb(255, 205, 41);
+    width: 19vw;
+    height: 40vh;
+}
+
+.background {
+    position: absolute;
+    width: 19vw;
+    height: 85vh;
+    background-color: #ffffff;
+    left: 79.9%;
+    margin-top: 17px;
+}
+
+.stats {
+    position: absolute;
+    top: 51%;
+    left: 7%;
+    font-size: 80%;
+    font-family: "JetBrains mono", monospace;
+    font-weight: 600;
+}
+.progress__bar {
+    width: 250%;
+    height: 2vh;
+}

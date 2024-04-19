@@ -1,5 +1,5 @@
 const api = "https://pokeapi.co/api/v2/";
-const pokemon_id = 254;
+const pokemon_id = 25;
 const pokemon_name = document.getElementById("poke_name");
 const pokemon_img = document.getElementById("poke_img");
 const pokemon_hp = document.getElementById("pokemon_hp");

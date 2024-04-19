@@ -7,7 +7,14 @@
 body {
     background-color: #a0a0a065;
 }
-
+:root {
+    --color-white: #fff;
+    --color-dark1: #212529;
+    --color-dark2: #2B3035;
+    --color-dark3: #495057;
+    --color-dark4: #1c1c1c;
+    --color-dark5: #343434;
+}
 .header {
     width: 100vw;
     height: 65px;
@@ -31,51 +38,12 @@ body {
     margin: 4px;
     margin-left: 18px;
 }
-
-<<<<<<< HEAD
-:root{
-=======
-.left-header:hover {
-    color: white;
-    transition: 0.5s;
-}
-
-.left-header {
-    position: relative;
-    top: 8px;
-    left: 4px;
-    margin: 5px;
-    text-decoration: none;
-    color: rgba(237, 237, 237, 0.687);
-    font-family: "JetBrains Mono", monospace;
-    font-optical-sizing: auto;
-    font-size: 15px;
-}
-
-:root {
->>>>>>> 1e7b09350fd50050fd10fbd3608088933c646ddf
-    --color-white: #fff;
-    --color-dark1: #212529;
-    --color-dark2: #2B3035;
-    --color-dark3: #495057;
-    --color-dark4: #1c1c1c;
-    --color-dark5: #343434;
-    --color-purple: #f70909;
-    --color-purple2: #d60303;
-}
-<<<<<<< HEAD
 .card{
     position: absolute;
     display: flexbox;
     flex-direction: column;
     left: 40.5%;
-=======
-
-.card {
-    position: relative;
->>>>>>> 1e7b09350fd50050fd10fbd3608088933c646ddf
 }
-
 .background {
     position: absolute;
     width: 19vw;
@@ -97,14 +65,8 @@ body {
     top: 3%;
     left: 7%;
 }
-
-<<<<<<< HEAD
-.poke__id{
-    color: #ecececf3;
-=======
 .poke__id {
     color: #e0e0e0c4;
->>>>>>> 1e7b09350fd50050fd10fbd3608088933c646ddf
     position: absolute;
     font-size: 90%;
     font-weight: 600;
@@ -136,13 +98,7 @@ body {
     font-family: "JetBrains mono", monospace;
     font-weight: 600;
 }
-
 .progress__bar {
     width: 250%;
     height: 2vh;
-<<<<<<< HEAD
 }
-
-=======
-}
->>>>>>> 1e7b09350fd50050fd10fbd3608088933c646ddf

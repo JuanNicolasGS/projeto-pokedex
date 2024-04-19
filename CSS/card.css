@@ -31,8 +31,8 @@
 
 .pokemon__img {
     position: absolute;
-    width: 90%;
-    left: 10%;
+    width: 85%;
+    left: 8%;
     top: 15%;
 }
 
@@ -60,6 +60,6 @@
     font-weight: 600;
 }
 .progress__bar {
-    width: 250%;
-    height: 2vh;
+    width: 17em;
+    height: 1em;
 }

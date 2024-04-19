@@ -5,7 +5,30 @@
     box-shadow: 0px 2px 2px var(--color-dark4);
     display: flex;
 }
-
+.leftHeader{
+    display: flex;
+    height: 100%;
+    margin-left: 1em;
+    align-items: center;
+}
+.boxInput{
+    display: flex;
+    height: 100%;
+    margin-left: 0.6em;
+    align-items: center;
+}
+.input{
+    color: #a0a0a065;
+    background-color: #6d6d6d85;
+    border: none;
+    border-radius: 10px;
+    padding: 3px;
+    padding-left: 10px;
+}
+.bi{
+    position: absolute;
+    left: 14em;
+}
 .right-header {
     display: flex;
     position: absolute;

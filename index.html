@@ -53,11 +53,11 @@
         <div class="card">
             <div class="background">
                 <div class="name__id">
-                    <h1 class="poke__name">Pikachu</h1>
-                    <span class="poke__id">25</span>
+                    <h1 class="poke__name" id="poke_name"></h1>
+                    <span class="poke__id" id="poke_id"></span>
                 </div>
                 <div class="backgroundimg"></div>
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/25.png"
+                <img id="poke_img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/25.png"
                     class="pokemon__img">
                 <div class="poke__info">
                     <div class="var">
@@ -66,37 +66,37 @@
                             <p>
                                 HP:
                                 <br>
-                                <progress value="35" max="225" class="progress__bar"></progress>
+                                <progress id="pokemon_hp" value="0" max="225" class="progress__bar"></progress>
                             </p>
                             <br>
                             <p>
                                 Atk:
                                 <br>
-                                <progress value="55" max="225" class="progress__bar"></progress>
+                                <progress id="pokemon_atk" value="55" max="225" class="progress__bar"></progress>
                             </p>
                             <br>
                             <p>
                                 Def:
                                 <br>
-                                <progress value="40" max="225" class="progress__bar"></progress>
+                                <progress id="pokemon_def" value="40" max="225" class="progress__bar"></progress>
                             </p>
                             <br>
                             <p>
                                 Esp. Atk:
                                 <br>
-                                <progress value="50" max="225" class="progress__bar"></progress>
+                                <progress id="pokemon_esp_atk" value="50" max="225" class="progress__bar"></progress>
                             </p>
                             <br>
                             <p>
                                 Esp. Def:
                                 <br>
-                                <progress value="50" max="225" class="progress__bar"></progress>
+                                <progress id="pokemon_esp_def" value="50" max="225" class="progress__bar"></progress>
                             </p>
                             <br>
                             <p>
                                 Velocidade:
                                 <br>
-                                <progress value="90" max="225" class="progress__bar"></progress>
+                                <progress id="pokemon_vel" value="90" max="225" class="progress__bar"></progress>
                             </p>
                         </div>
                     </div>

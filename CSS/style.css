@@ -1,14 +1,14 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #a0a0a065;
 }
 
-.header{
+.header {
     width: 100vw;
     height: 65px;
     background-image: linear-gradient(to right, var(--color-purple), var(--color-purple2));
@@ -16,26 +16,28 @@ body{
     display: flex;
 }
 
-.right-header{
+.right-header {
     display: flex;
     position: absolute;
     right: 20px;
-    top: 16px;   
+    top: 16px;
 }
-.img-header{
+
+.img-header {
     margin: 4px;
 }
-.img-header-home{
+
+.img-header-home {
     margin: 4px;
     margin-left: 18px;
 }
 
-.left-header:hover{
+.left-header:hover {
     color: white;
     transition: 0.5s;
 }
 
-.left-header{
+.left-header {
     position: relative;
     top: 8px;
     left: 4px;
@@ -46,7 +48,8 @@ body{
     font-optical-sizing: auto;
     font-size: 15px;
 }
-:root{
+
+:root {
     --color-white: #fff;
     --color-dark1: #212529;
     --color-dark2: #2B3035;
@@ -56,18 +59,21 @@ body{
     --color-purple: #f70909;
     --color-purple2: #d60303;
 }
-.card{
+
+.card {
     position: relative;
 }
+
 .background {
     position: absolute;
     width: 19vw;
-    height: 85vh; 
+    height: 85vh;
     background-color: #ffffff;
     left: 79.9%;
     margin-top: 17px;
 }
-.poke__name{
+
+.poke__name {
     text-transform: capitalize;
     color: #ffffff;
     margin: 0;
@@ -80,7 +86,7 @@ body{
     left: 7%;
 }
 
-.poke__id{
+.poke__id {
     color: #e0e0e0c4;
     position: absolute;
     font-size: 90%;
@@ -91,17 +97,20 @@ body{
     margin: 0;
     padding: 0;
 }
-.backgroundimg{
+
+.backgroundimg {
     background-color: rgb(255, 205, 41);
     width: 19vw;
     height: 40vh;
 }
-.pokemon__img{
+
+.pokemon__img {
     position: absolute;
-    width: 90%;    
+    width: 90%;
     left: 10%;
     top: 15%;
 }
+
 .stats {
     position: absolute;
     top: 51%;
@@ -110,10 +119,8 @@ body{
     font-family: "JetBrains mono", monospace;
     font-weight: 600;
 }
+
 .progress__bar {
     width: 250%;
     height: 2vh;
 }
-
-  
-

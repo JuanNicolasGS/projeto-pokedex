@@ -24,3 +24,8 @@ fetch(api + `pokemon/${pokemon_id}`)
     pokemon_esp_def.value = pokemon_stats[4].base_stat;
     pokemon_vel.value = pokemon_stats[5].base_stat;
   });
+fetch(api + `pokemon-species/${pokemon_id}`)
+  .then((res) => res.json())
+  .then((json) => {
+    console.log(json);
+  });

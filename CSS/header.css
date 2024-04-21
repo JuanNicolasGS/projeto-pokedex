@@ -5,13 +5,13 @@
     box-shadow: 0px 2px 2px var(--color-dark4);
     display: flex;
 }
-.leftHeader{
+.left__header{
     display: flex;
     height: 100%;
     margin-left: 1em;
     align-items: center;
 }
-.boxInput{
+.box__input{
     display: flex;
     height: 100%;
     margin-left: 0.6em;
@@ -29,7 +29,7 @@
     position: absolute;
     left: 14em;
 }
-.right-header {
+.right__header {
     display: flex;
     width: 100%;
     height: 100%;
@@ -37,14 +37,14 @@
     justify-content: right;
     margin-right: 1em;
 }
-.linkImg{
+.link__img{
     text-decoration: none;
 }
-.img-header {
+.img__header {
     margin: 4px;
 }
 
-.img-header-home {
+.img__header__home {
     margin: 4px;
     margin-left: 18px;
 }

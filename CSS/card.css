@@ -1,4 +1,6 @@
 .card{
+    padding: 0%;
+    margin: 0%;
     display: flex;
     width: 100%;
     height: 100%;
@@ -7,11 +9,12 @@
     margin-top: 1.1em;
 }
 .name__id{
+    margin: 1em;
     display: flex;
     width: 100%;
-    padding: 1em;
+    height: 100%;
     justify-content: space-between;
-    align-items: center;
+    padding-right: 1em;
 }
 .poke__name {
     text-transform: capitalize;
@@ -19,6 +22,24 @@
     font-size: 80%;
     font-weight: 600;
     font-family: "JetBrains mono", monospace;
+    letter-spacing: 1px;
+    margin-left: 1em;
+}
+.type__box{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.poke__types{
+    margin-top: 0.2em;
+    width: 30%;
+    height: 1.15em;
+    padding: 0 0.3em;
+}
+.poke__type2{
+    display:none;
 }
 
 .poke__id {
@@ -29,37 +50,43 @@
 }
 
 .pokemon__img {
-    position: relative;
-    width: 85%;
-    left: 8%;
-    top: 15%;
+    position:absolute;
+    width: 18%;
+    top: 20%;
 }
 
-.backgroundimg {
-    background-color: rgb(255, 205, 41);
-    width: 19vw;
-    height: 40vh;
+.background__img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-pokegreen);
+    width: 100%;
+    height: 44%;
 }
 
 .background {
+    display: flex;
+    flex-direction: column;
     width: 19vw;
     height: 85vh;
     background-color: #ffffff;
+    box-shadow: -2px 2px 4px rgba(100, 100, 100, 0.6);  
 }
 
 .stats {
+    margin-left: 5%;
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
     padding-top: 1.5em;
-    align-items: center;
-    justify-content: center;
     font-size: 80%;
     font-family: "JetBrains mono", monospace;
     font-weight: 600;
+    letter-spacing: 1px;
 }
 .progress__bar {
-    width: 17em;
+    width: 90%;
     height: 1em;
 }

@@ -14,4 +14,8 @@ body {
     --color-dark3: #495057;
     --color-dark4: #1c1c1c;
     --color-dark5: #343434;
+    --color-pokeyellow: rgb(255, 212, 55);
+    --color-pokegreen: rgb(94, 218, 94);
+    --color-pokered: rgb(255, 139, 118);
+    --color-pokeblue: rgb(138, 198, 255);
 }

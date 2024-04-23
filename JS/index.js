@@ -52,9 +52,3 @@ fetch(api + `pokemon/${pokemon_id}`)
       pokemon_type.src = pokemonTypesImages[json.types[0].type.name]
     }
   });
-
-fetch(api + `pokemon-species/${pokemon_id}`)
-  .then((res) => res.json())
-  .then((json) => {
-    console.log(json);
-  });

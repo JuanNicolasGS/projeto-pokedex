@@ -55,7 +55,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--color-pokegray);
+    background-color: var(--color-pokeblack);
     width: 100%;
     height: 44%;
 }

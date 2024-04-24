@@ -67,6 +67,7 @@ fetch(api + `pokemon/${pokemon_id}`)
   });
 
 button_search.addEventListener("click", () => {
+  search_input.innerHTML = "";
   pokemon_box_types.innerHTML = "";
   fetch(api + `pokemon/${search_input.value}`)
     .then((res) => res.json())

@@ -14,13 +14,17 @@
 <body>
     <div class="header" id="header">
         <div class="left__header">
-            <img src="./IMGS/pokeball.svg" class="poke__img__header" width="40px" height="40px" >
+            <img src="./IMGS/pokeball.svg" class="poke__img__header" width="40px" height="40px">
         </div>
         <div class="box__input">
-            <input type="search" class="input" placeholder="Nome ou Id..." id="input">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#a0a0a065" class="bi bi__search" viewBox="0 0 16 16">
-                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-              </svg>
+            <input type="text" class="input" placeholder="Nome ou Id..." id="input">
+
+            <svg xmlns="http://www.w3.org/2000/svg" id="button-search" width="16" height="16" fill="#a0a0a065"
+                class="bi bi__search" viewBox="0 0 16 16">
+                <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+            </svg>
+
         </div>
         <div class="right__header">
             <div class="img__R__Header">
@@ -68,9 +72,9 @@
                         <span class="poke__id" id="poke_id"></span>
                     </div>
                     <div id="types__box">
-                        <img src="" class="poke__types" id="poke__type1" alt="tipo do pokemon">
                     </div>
-                    <img id="poke_img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/25.png"
+                    <img id="poke_img"
+                        src=""
                         class="pokemon__img">
                 </div>
                 <div class="poke__info">
@@ -111,7 +115,7 @@
                                 <br>
                                 <progress id="pokemon_vel" value="90" max="225" class="progress__bar"></progress>
                             </p>
-                        </div>     
+                        </div>
                     </div>
                 </div>
             </div>

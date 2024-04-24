@@ -18,16 +18,22 @@
     align-items: center;
 }
 .input{
-    color: #a0a0a065;
+    color: white;
     background-color: #6d6d6d85;
     border: none;
     border-radius: 10px;
-    padding: 3px;
+    padding: 4px;
     padding-left: 10px;
 }
+
+.input::placeholder {
+    color: #a0a0a065;
+}
+
 .bi{
-    position: absolute;
-    left: 14em;
+    position: relative;
+    right: 1.3em;
+    cursor: pointer;
 }
 .right__header {
     display: flex;

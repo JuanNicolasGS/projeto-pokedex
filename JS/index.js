@@ -1,6 +1,7 @@
 const api = "https://pokeapi.co/api/v2/";
 const pokemon_id = 1;
 const pokemon_name = document.getElementById("poke_name");
+const pokemon_background_img = document.getElementById("pokemon-background");
 const pokemon_img = document.getElementById("poke_img");
 const pokemon_hp = document.getElementById("pokemon_hp");
 const pokemon_atk = document.getElementById("pokemon_atk");
@@ -68,14 +69,21 @@ fetch(api + `pokemon/${pokemon_id}`)
 
 button_search.addEventListener("click", () => {
   if (search_input.value.trim() === "") {
-    alert("Digite um nome ou ID de um pokemon...")
+    alert("Digite um nome ou ID de um pokemon...");
   } else {
     pokemon_box_types.innerHTML = "";
+
     fetch(api + `pokemon/${search_input.value.toLowerCase()}`)
       .then((res) => res.json())
       .then((json) => {
         document.getElementById("poke_id").innerHTML = json.id;
         pokemon_name.innerHTML = json.name;
+        fetch(api + `pokemon-species/${json.id}`)
+          .then((data) => data.json())
+          .then((info_color) => {
+            const cor = info_color.color.name;
+            pokemon_background_img.style.backgroundColor = `var(--color-poke${cor})`;
+          });
         pokemon_img.src = json.sprites.other.home.front_default;
         const pokemon_stats = json.stats;
         pokemon_hp.value = pokemon_stats[0].base_stat;
@@ -84,7 +92,7 @@ button_search.addEventListener("click", () => {
         pokemon_esp_atk.value = pokemon_stats[3].base_stat;
         pokemon_esp_def.value = pokemon_stats[4].base_stat;
         pokemon_vel.value = pokemon_stats[5].base_stat;
-  
+
         if (json.types.length == 2) {
           pokemon_box_types.innerHTML += `<img src="${
             pokemonTypesImages[json.types[0].type.name]

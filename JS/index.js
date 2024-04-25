@@ -35,7 +35,7 @@ const button_search = document.getElementById("button-search");
 
 search_input.addEventListener("keyup", (event) => {
   if (event.key === "Enter") {
-    button_search.dispatchEvent(new MouseEvent('click'));
+    button_search.dispatchEvent(new MouseEvent("click"));
   }
 });
 
@@ -67,33 +67,37 @@ fetch(api + `pokemon/${pokemon_id}`)
   });
 
 button_search.addEventListener("click", () => {
-  search_input.innerHTML = "";
-  pokemon_box_types.innerHTML = "";
-  fetch(api + `pokemon/${search_input.value}`)
-    .then((res) => res.json())
-    .then((json) => {
-      document.getElementById("poke_id").innerHTML = json.id;
-      pokemon_name.innerHTML = json.name;
-      pokemon_img.src = json.sprites.other.home.front_default;
-      const pokemon_stats = json.stats;
-      pokemon_hp.value = pokemon_stats[0].base_stat;
-      pokemon_atk.value = pokemon_stats[1].base_stat;
-      pokemon_def.value = pokemon_stats[2].base_stat;
-      pokemon_esp_atk.value = pokemon_stats[3].base_stat;
-      pokemon_esp_def.value = pokemon_stats[4].base_stat;
-      pokemon_vel.value = pokemon_stats[5].base_stat;
-
-      if (json.types.length == 2) {
-        pokemon_box_types.innerHTML += `<img src="${
-          pokemonTypesImages[json.types[0].type.name]
-        }" class="poke__types" id="poke__type1" alt=" primeiro tipo do pokemon">`;
-        pokemon_box_types.innerHTML += `<img src="${
-          pokemonTypesImages[json.types[1].type.name]
-        }" class="poke__types" id="poke__type2" alt=" segundo tipo do pokemon">`;
-      } else {
-        pokemon_box_types.innerHTML += `<img src="${
-          pokemonTypesImages[json.types[0].type.name]
-        }" class="poke__types" id="poke__type1" alt=" primeiro tipo do pokemon">`;
-      }
-    });
+  if (search_input.value.trim() === "") {
+    alert("Digite um nome ou ID de um pokemon...")
+  } else {
+    pokemon_box_types.innerHTML = "";
+    fetch(api + `pokemon/${search_input.value.toLowerCase()}`)
+      .then((res) => res.json())
+      .then((json) => {
+        document.getElementById("poke_id").innerHTML = json.id;
+        pokemon_name.innerHTML = json.name;
+        pokemon_img.src = json.sprites.other.home.front_default;
+        const pokemon_stats = json.stats;
+        pokemon_hp.value = pokemon_stats[0].base_stat;
+        pokemon_atk.value = pokemon_stats[1].base_stat;
+        pokemon_def.value = pokemon_stats[2].base_stat;
+        pokemon_esp_atk.value = pokemon_stats[3].base_stat;
+        pokemon_esp_def.value = pokemon_stats[4].base_stat;
+        pokemon_vel.value = pokemon_stats[5].base_stat;
+  
+        if (json.types.length == 2) {
+          pokemon_box_types.innerHTML += `<img src="${
+            pokemonTypesImages[json.types[0].type.name]
+          }" class="poke__types" id="poke__type1" alt=" primeiro tipo do pokemon">`;
+          pokemon_box_types.innerHTML += `<img src="${
+            pokemonTypesImages[json.types[1].type.name]
+          }" class="poke__types" id="poke__type2" alt=" segundo tipo do pokemon">`;
+        } else {
+          pokemon_box_types.innerHTML += `<img src="${
+            pokemonTypesImages[json.types[0].type.name]
+          }" class="poke__types" id="poke__type1" alt=" primeiro tipo do pokemon">`;
+        }
+      });
+    search_input.value = "";
+  }
 });

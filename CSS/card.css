@@ -88,6 +88,7 @@
     font-family: "JetBrains mono", monospace;
     font-weight: 600;
     letter-spacing: 1px;
+    padding-bottom: 10px;
 }
 
 .progress__bar {

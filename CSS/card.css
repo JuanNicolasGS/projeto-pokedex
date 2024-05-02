@@ -1,0 +1,97 @@
+.card {
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.1em;
+}
+
+.name__id {
+    margin: 1em;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-right: 1em;
+}
+
+.poke__name {
+    text-transform: capitalize;
+    color: #ffffff;
+    font-size: 80%;
+    font-weight: 600;
+    font-family: "JetBrains mono", monospace;
+    letter-spacing: 1px;
+    margin-left: 1em;
+}
+
+#types__box {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    gap: 10px;
+}
+
+.poke__types {
+    width: 30%;
+    height: 1.15em;
+    filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.5));
+}
+
+.poke__id {
+    color: #ecececf8;
+    font-size: 80%;
+    font-weight: 600;
+    font-family: "JetBrains mono", monospace;
+}
+
+.pokemon__img {
+    position: absolute;
+    width: 18%;
+    top: 20%;
+}
+
+.background__img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-pokegreen);
+    width: 100%;
+    height: 44%;
+}
+
+.background {
+    display: flex;
+    flex-direction: column;
+    width: 19vw;
+    height: 85vh;
+    background-color: #ffffff;
+    box-shadow: -2px 2px 4px rgba(100, 100, 100, 0.6);
+}
+
+.poke__info {
+    margin-top: 28px;
+}
+
+.stats {
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding-top: 1.5em;
+    font-size: 80%;
+    font-family: "JetBrains mono", monospace;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+}
+
+.progress__bar {
+    width: 90%;
+    height: 1em;
+}

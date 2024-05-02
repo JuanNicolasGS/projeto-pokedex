@@ -1,101 +1,30 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    background-color: var(--color-dark1);
+body {
+    background-color: #a0a0a065;
+    font-family: "JetBrains mono", monospace;
+    font-weight: 800;
 }
 
-.header{
-    width: 100vw;
-    height: 65px;
-    background-image: linear-gradient(to right, #6528E0, #6F2CF4);
-    box-shadow: 2px 2px 8px var(--color-dark4);
-    display: flex;
-}
-
-.right-header{
-    display: flex;
-    position: absolute;
-    right: 20px;
-    top: 16px;   
-}
-.img-header{
-    margin: 4px;
-}
-.img-header-home{
-    margin: 4px;
-    margin-left: 18px;
-}
-
-.left-header:hover{
-    color: white;
-    transition: 0.5s;
-}
-
-.left-header{
-    position: relative;
-    top: 8px;
-    left: 4px;
-    margin: 5px;
-    text-decoration: none;
-    color: rgba(237, 237, 237, 0.687);
-    font-family: "JetBrains Mono", monospace;
-    font-optical-sizing: auto;
-    font-size: 15px;
-}
-
-.card{
-    color: rgb(0, 99, 100);
-}
-:root{
+:root {
     --color-white: #fff;
     --color-dark1: #212529;
     --color-dark2: #2B3035;
     --color-dark3: #495057;
     --color-dark4: #1c1c1c;
     --color-dark5: #343434;
-    --color-purple: #6528E0;
-    --color-purple2: #6F2CF4;
-}
-  
-.pokemon-card {
-    border: 2px solid var(--color-purple);
-    border-radius: 10px;
-    padding: 20px;  
-    display: flex;
-    align-items: center;
-    background-color: #f3f3f3;
-}
-  
-.pokemon-card img {
-    width: 150px;
-    height: 150px;
-    margin-right: 20px;
-}
-  
-.pokemon-info {
-    flex-grow: 1;
-}
-  
-.pokemon-name {
-    margin: 0;
-    font-size: 24px;
-    color: #333;
-}
-  
-.pokemon-type {
-    margin: 5px 0;
-    font-size: 18px;
-    color: #666;
-}
-  
-.pokemon-abilities,
-.pokemon-held-items,
-.pokemon-moves,
-.pokemon-status {
-    margin: 5px 0;
-    font-size: 16px;
-    color: #888;
+    --color-pokeyellow: rgb(255, 212, 55);
+    --color-pokegreen: rgb(94, 218, 94);
+    --color-pokered: rgb(255, 139, 118);
+    --color-pokeblue: rgb(138, 198, 255);
+    --color-pokewhite: rgba(207, 207, 207, 0.76);
+    --color-pokebrown: rgba(136, 91, 60, 0.774);
+    --color-pokepurple: rgb(133, 94, 240);
+    --color-pokepink: rgba(255, 169, 205, 0.938);
+    --color-pokegray: rgba(168, 178, 190, 0.993);
+    --color-pokeblack: rgba(31, 31, 31, 0.726);
 }

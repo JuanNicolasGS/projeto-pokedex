@@ -6,6 +6,8 @@
 
 body {
     background-color: #a0a0a065;
+    font-family: "JetBrains mono", monospace;
+    font-weight: 800;
 }
 
 :root {

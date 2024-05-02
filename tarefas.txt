@@ -1,0 +1,13 @@
+1 - 20 cards secundários 
+    [] criar a interface de uma maneira que o card principal fique mais destacado na tela.
+    [] Fazer uma única requisição para puxar os dados dos 20 primeiros pokemon.
+2 - botão de avançar e regredir
+    [] criar layout dos botoes
+    [] fazer os botoes funcionarem 
+3 - responsividade para mobile
+    [] deixar responsivo
+4 - resolução de bugs da v1
+    [] Identificar bugs
+    [] achar a causa e resolver
+5 - botão de informações técnicas
+    [] ao clicar num canto do card uma nova pagina se abre mostrando mais informações do pokemon em questão

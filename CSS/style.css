@@ -93,3 +93,10 @@ body {
 .img__header__home {
     margin: 2px;
 }
+
+@media screen and (max-width: 360px){
+    /* Header */
+    .img__header__home {
+        display: none;
+    }
+}

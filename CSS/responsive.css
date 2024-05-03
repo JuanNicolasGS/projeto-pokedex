@@ -1,0 +1,15 @@
+
+@media screen and (max-width: 721px) {
+    /* Header */
+    .img__header__home {
+    display: none;
+    }
+    /* Card */
+    .background{
+        width: 55%;
+    }
+    .pokemon__img{
+        width: 60%;
+    }
+}
+

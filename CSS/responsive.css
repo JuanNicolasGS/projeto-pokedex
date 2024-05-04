@@ -12,4 +12,31 @@
         width: 60%;
     }
 }
-
+@media screen and (max-height: 600px){
+    /* Header */
+    .img__header__home, .img__header {
+        display: none;
+    }
+    .input{
+        margin-left: 40px;
+    }
+    .bi{
+        right: 1.5em;
+    }
+    .poke__img__header{
+        display: none;
+    }
+    /* Card */
+    .background{
+        width: 45%;
+        height: 105vh;
+    }
+    .background__img{
+        height: 80%;
+        
+    }
+    .pokemon__img{
+        width: 50%;
+        top: 25%;
+    }
+}

@@ -34,18 +34,25 @@
 
     .background {
         width: 100%;
-        height: 100vh;
+        height: 100%;
     }
 
     .background__img {
-        height: 100vw;
+        height: 60%;
     }
-
+    .poke__types{
+        height: 1.5em;
+    }
     .pokemon__img {
+        position: relative;
+        top: 0;
         width: 85%;
     }
-
     .poke__info {
         margin-top: 0px;
+    }
+    .poke__name, .poke__id {
+        margin-top: 16px;
+        font-size: 1.1em;
     }
 }

@@ -18,15 +18,16 @@
     }
 
     .input {
-        padding: 8px;
+        padding: 6px;
         width: 100%;
     }
-
     .img__R__Header {
         display: flex;
         gap: 5px;
     }
-
+    .img__header{
+        display: none;
+    }
     /* Card */
     .card {
         margin-top: 0px;

@@ -5,7 +5,7 @@
     [] criar layout dos botoes
     [] fazer os botoes funcionarem 
 3 - responsividade para mobile
-    [] deixar responsivo
+    [X] deixar responsivo
 4 - resolução de bugs da v1
     [] Identificar bugs
     [] achar a causa e resolver

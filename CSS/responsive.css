@@ -1,42 +1,51 @@
+@media (max-width: 450px) {
 
-@media screen and (max-width: 721px) {
     /* Header */
-    .img__header__home {
-    display: none;
+    .header {
+        padding: 10px;
     }
+
+    .right__header {
+        flex: 1;
+    }
+
+    .box__input {
+        flex: 5;
+    }
+
+    .left__header {
+        flex: 1;
+    }
+
+    .input {
+        padding: 8px;
+        width: 100%;
+    }
+
+    .img__R__Header {
+        display: flex;
+        gap: 5px;
+    }
+
     /* Card */
-    .background{
-        width: 55%;
+    .card {
+        margin-top: 0px;
     }
-    .pokemon__img{
-        width: 60%;
+
+    .background {
+        width: 100%;
+        height: 100vh;
     }
-}
-@media screen and (max-height: 600px){
-    /* Header */
-    .img__header__home, .img__header {
-        display: none;
+
+    .background__img {
+        height: 100vw;
     }
-    .input{
-        margin-left: 40px;
+
+    .pokemon__img {
+        width: 85%;
     }
-    .bi{
-        right: 1.5em;
-    }
-    .poke__img__header{
-        display: none;
-    }
-    /* Card */
-    .background{
-        width: 45%;
-        height: 105vh;
-    }
-    .background__img{
-        height: 80%;
-        
-    }
-    .pokemon__img{
-        width: 50%;
-        top: 25%;
+
+    .poke__info {
+        margin-top: 0px;
     }
 }

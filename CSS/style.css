@@ -28,6 +28,8 @@ body {
     --color-pokegray: rgba(168, 178, 190, 0.993);
     --color-pokeblack: rgba(31, 31, 31, 0.726);
 }
+
+/* CSS HEADER */
 .header {
     height: 65px;
     background-color: #030303f8;
@@ -90,4 +92,65 @@ body {
 
 .img__header__home {
     margin: 2px;
+}
+
+/* CSS RESPONSIVE */
+@media (max-width: 450px) {
+
+    /* Header */
+    .header {
+        padding: 10px;
+    }
+
+    .right__header {
+        flex: 1;
+    }
+
+    .box__input {
+        flex: 5;
+    }
+
+    .left__header {
+        flex: 1;
+    }
+
+    .input {
+        padding: 6px;
+        width: 100%;
+    }
+    .img__R__Header {
+        display: flex;
+        gap: 5px;
+    }
+    .img__header{
+        display: none;
+    }
+    /* Card */
+    .card {
+        margin-top: 0px;
+    }
+
+    .background {
+        width: 100%;
+        height: 100%;
+    }
+
+    .background__img {
+        height: 60%;
+    }
+    .poke__types{
+        height: 1.5em;
+    }
+    .pokemon__img {
+        position: relative;
+        top: 0;
+        width: 85%;
+    }
+    .poke__info {
+        margin-top: 0px;
+    }
+    .poke__name, .poke__id {
+        margin-top: 16px;
+        font-size: 1.1em;
+    }
 }

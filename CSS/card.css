@@ -50,7 +50,7 @@
 
 .pokemon__img {
     position: absolute;
-    width: 18%;
+    width: 262px;
     top: 20%;
 }
 
@@ -67,8 +67,8 @@
 .background {
     display: flex;
     flex-direction: column;
-    width: 19vw;
-    height: 85vh;
+    width: 292px;
+    height: 632px;
     background-color: #ffffff;
     box-shadow: -2px 2px 4px rgba(100, 100, 100, 0.6);
 }

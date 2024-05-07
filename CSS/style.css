@@ -74,7 +74,7 @@ body {
     }
 
     .poke__types {
-        height: 1.5em;
+        height: 1.7em;
     }
 
     .pokemon__img {
@@ -85,6 +85,15 @@ body {
 
     .poke__info {
         margin-top: 0px;
+    }
+
+    .stats {
+        margin: 0;
+        padding: 25px;
+    }
+
+    .progress__bar {
+        width: 100%;
     }
 
     .poke__name,

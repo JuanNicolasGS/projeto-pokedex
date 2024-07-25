@@ -3,114 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/vite.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/card.css">
-    <link rel="stylesheet" href="./CSS/style.css">
-    <link rel="shortcut icon" href="./IMGS/pokeball.svg">
-    <title>PokeProject</title>
+    <title>Vite + React</title>
 </head>
 
 <body>
-    <nav>
-        <div class="header" id="header">
-            <div class="left__header">
-                <img src="./IMGS/pokeball.svg" class="poke__img__header" width="40px" height="40px">
-            </div>
-            <div class="box__input">
-                <input type="text" class="input" placeholder="Nome ou Id..." id="input">
-
-                <svg xmlns="http://www.w3.org/2000/svg" id="button-search" width="16" height="16" fill="#a0a0a065"
-                    class="bi bi__search" viewBox="0 0 16 16">
-                    <path
-                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
-                </svg>
-            </div>
-            <div class="right__header">
-                <div class="img__R__Header">
-                    <a href="https://www.instagram.com/pokeproject.official/" target="_blank" class="link__img">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="rgb(256, 256, 256)"
-                            class="img__header" viewBox="0 0 16 16">
-                            <path
-                                d="M2 4a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v11.5a.5.5 0 0 1-.777.416L7 13.101l-4.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v10.566l3.723-2.482a.5.5 0 0 1 .554 0L11 14.566V4a1 1 0 0 0-1-1z" />
-                            <path
-                                d="M4.268 1H12a1 1 0 0 1 1 1v11.768l.223.148A.5.5 0 0 0 14 13.5V2a2 2 0 0 0-2-2H6a2 2 0 0 0-1.732 1" />
-                        </svg>
-                    </a>
-                    <a href="https://github.com/JuanNicolasGS/projeto-greve" target="_blank" class="link__img">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="rgb(256, 256, 256)"
-                            class="img__header" viewBox="0 0 16 16">
-                            <path
-                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
-                        </svg>
-                    </a>
-                    <a href="./index.html" class="link__img">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="rgb(256, 256, 256)"
-                            class="img__header__home" viewBox="0 0 16 16">
-                            <path
-                                d="M5.793 1a1 1 0 0 1 1.414 0l.647.646a.5.5 0 1 1-.708.708L6.5 1.707 2 6.207V12.5a.5.5 0 0 0 .5.5.5.5 0 0 1 0 1A1.5 1.5 0 0 1 1 12.5V7.207l-.146.147a.5.5 0 0 1-.708-.708zm3 1a1 1 0 0 1 1.414 0L12 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l1.854 1.853a.5.5 0 0 1-.708.708L15 8.207V13.5a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 4 13.5V8.207l-.146.147a.5.5 0 1 1-.708-.708zm.707.707L5 7.207V13.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5V7.207z" />
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <main>
-        <div class="card">
-            <div class="background">
-                <div class="background__img" id="pokemon-background">
-                    <div class="name__id">
-                        <h1 class="poke__name" id="poke_name"></h1>
-                        <span class="poke__id" id="poke_id"></span>
-                    </div>
-                    <div id="types__box">
-                    </div>
-                    <img id="poke_img" src="" class="pokemon__img">
-                </div>
-                <div class="poke__info">
-                    <div class="var">
-                        <div class="stats">
-                            <p>
-                                HP:
-                                <br>
-                                <progress id="pokemon_hp" value="0" max="225" class="progress__bar"></progress>
-                            </p>
-                            <br>
-                            <p>
-                                Atk:
-                                <br>
-                                <progress id="pokemon_atk" value="55" max="225" class="progress__bar"></progress>
-                            </p>
-                            <br>
-                            <p>
-                                Def:
-                                <br>
-                                <progress id="pokemon_def" value="40" max="225" class="progress__bar"></progress>
-                            </p>
-                            <br>
-                            <p>
-                                Esp. Atk:
-                                <br>
-                                <progress id="pokemon_esp_atk" value="50" max="225" class="progress__bar"></progress>
-                            </p>
-                            <br>
-                            <p>
-                                Esp. Def:
-                                <br>
-                                <progress id="pokemon_esp_def" value="50" max="225" class="progress__bar"></progress>
-                            </p>
-                            <br>
-                            <p>
-                                Speed:
-                                <br>
-                                <progress id="pokemon_vel" value="90" max="225" class="progress__bar"></progress>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-    <script src="./JS/index.js"></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
 </body>
 
 </html>

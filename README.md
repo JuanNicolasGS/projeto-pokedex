@@ -31,7 +31,7 @@
       </a>
     </td>
      <td align="center">
-      <a href="https://github.com/JonatasNatan-web">
+      <a href="https://github.com/JonatasNatanOFC">
         <img src="https://avatars.githubusercontent.com/u/174431264?v=4" width="100px;" alt="Foto de contribuidor no GitHub"/><br>
         <sub>
           <b>Jonatas Natan</b>

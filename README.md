@@ -24,7 +24,15 @@
     </td>
     <td align="center">
       <a href="https://github.com/Isaac-Yuri">
-        <img src="https://avatars.githubusercontent.com/u/73003763?v=4" width="100px;" alt="Foto do Mark Zuckerberg"/><br>
+        <img src="https://avatars.githubusercontent.com/u/73003763?v=4" width="100px;" alt="Foto de contribuidor no GitHub"/><br>
+        <sub>
+          <b>Isaac Yuri</b>
+        </sub>
+      </a>
+    </td>
+     <td align="center">
+      <a href="https://github.com/JonatasNatan-web">
+        <img src="https://avatars.githubusercontent.com/u/174431264?s=100&v=4" width="100px;" alt="Foto de contribuidor no GitHub"/><br>
         <sub>
           <b>Isaac Yuri</b>
         </sub>

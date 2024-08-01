@@ -7,7 +7,7 @@ function App() {
       <nav>
         <header className='flex'>
             <img src="./public/pokeball.svg" className='w-9 p-0.5 bg-zinc-800 rounded-full m-2 shadow-md' alt="" />
-            <input type="search" placeholder='Name or ID' className='w-3/4 rounded-full p-4 h-2 bg-zinc-800 m-2.5 shadow-md' />
+            <input  type="search" placeholder='Name or ID' className='w-3/4 rounded-full p-4 h-2 bg-zinc-800 m-2.5 shadow-md text-white' />
              {/*<svg xmlns="http://www.w3.org/2000/svg" id="button-search" width="16" height="16" fill="#a0a0a065"
                 class="bi bi__search" viewBox="0 0 16 16">
                 <path

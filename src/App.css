@@ -1,3 +1,18 @@
 body{
   background-color: #353535;
 }
+.span{
+  color: rgba(255, 255, 255, 0.68);
+  font-family: Roboto, monospace;
+  font-weight: 600;
+}
+.pokeName{
+  color: #ffff;
+  font-family: Roboto, monospace;
+  font-weight: 500;
+}
+.bi__search{
+  position: absolute;
+  top: 2.5dvh;
+  right: 17%;
+}

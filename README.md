@@ -30,6 +30,14 @@
         </sub>
       </a>
     </td>
+    <td align="center">
+      <a href="https://github.com/JonatasNatanOFC">
+        <img src="https://avatars.githubusercontent.com/u/174431264?v=4" width="100px;" alt="Foto do Colaborador Jonatas Natan"/><br>
+        <sub>
+          <b>Jonatas Natan</b>
+        </sub>
+      </a>
+    </td>
   </tr>
 </table>
 

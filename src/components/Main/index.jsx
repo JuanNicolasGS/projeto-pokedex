@@ -1,4 +1,5 @@
 import Card from "../Card";
+import ThemeBtn from "../ThemeButton/themebutton";
 
 const pokemons = [
     {
@@ -104,7 +105,7 @@ export default function Main() {
 
     return (
         <main className="flex flex-col h-full w-full justify-center items-center">
-            <div className="w-11/12 h-full bg-zinc-800 grid grid-cols-2 grid-rows-4 gap-4 rounded-xl p-4">
+            <div className="w-11/12 h-full bg-secondaryDark grid grid-cols-2 grid-rows-4 gap-4 rounded-xl p-4">
                 {pokemons.map(pokemon => 
                     <Card
                         key={pokemon.numero}
@@ -114,6 +115,9 @@ export default function Main() {
                         numero={pokemon.numero}
                     />
                 )}
+            </div>
+            <div>
+                <ThemeBtn />
             </div>
         </main>
     )

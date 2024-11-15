@@ -11,3 +11,6 @@
     [] achar a causa e resolver
 5 - botão de informações técnicas
     [] ao clicar num canto do card uma nova pagina se abre mostrando mais informações do pokemon em questão
+6 - temas
+    [] botão de tema resposivel e funcional
+    [] utilização aprimoda
